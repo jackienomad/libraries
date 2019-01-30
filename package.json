@@ -1,7 +1,7 @@
 {
   "name": "ig-library",
   "version": "1.0.0",
-  "description": "IG Common Library",
+  "description": "Common Library",
   "main": "index.js",
   "scripts": {
     "test": "node -r dotenv/config ./node_modules/.bin/jest test --config=jest.config.json",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:importgenius/microservices/ig-library.git"
+    "url": "git@github.com:jackienomad/libraries.git"
   },
   "author": "jerac dialino",
   "license": "ISC",
