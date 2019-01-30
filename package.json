@@ -1,0 +1,50 @@
+{
+  "name": "ig-library",
+  "version": "1.0.0",
+  "description": "IG Common Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -r dotenv/config ./node_modules/.bin/jest test --config=jest.config.json",
+    "lint": "eslint src test",
+    "dev": "NODE_ENV=development node -r dotenv/config ./index.js",
+    "jest": "jest ."
+  },
+  "engines": {
+    "node": ">=8.11.0"
+  },
+  "_moduleAliases": {
+    "~": "./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:importgenius/microservices/ig-library.git"
+  },
+  "author": "jerac dialino",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "eslint": "^5.8.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "faker": "^4.1.0",
+    "jest": "^23.6.0",
+    "jest-stare": "^1.8.0",
+    "nodemon": "^1.18.6",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "module-alias": "^2.1.0"
+  },
+  "jest-stare": {
+    "resultDir": "reports/latest",
+    "coverageLink": "./coverage/index.html",
+    "additionalResultsProcessors": []
+  }
+}

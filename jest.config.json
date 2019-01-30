@@ -1,0 +1,12 @@
+{
+  "testResultsProcessor": "jest-stare",
+  "reporters": [
+    "default"
+  ],
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx}"
+  ],
+  "coverageDirectory": "reports/latest/coverage",
+  "coverageReporters": ["json", "html"]
+}

@@ -1,0 +1,12 @@
+stages:
+  - build
+
+build:
+  image: node:8.11.4
+  stage: build
+  before_script:
+    - cp .env.example .env
+    - sed -i -e 's/{secret}/_XEz?4ppa_SzjXhdWJ68duXpvgE#^J-E4!9kharXVuJCDM#jCYEcMdvn@T@Lu5NY/g' .env
+    - npm install
+  script:
+    - npm run test
